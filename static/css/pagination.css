@@ -1,0 +1,38 @@
+/*
+ * Author: tfiwits<http://0w0.at>
+ * LICENSE: MIT
+ * Created on 2017-01-01
+ */
+
+.btn:hover, .post-more-link .btn:hover {
+    color: #fff;
+    background: #9d2933;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 40px;
+    padding: 0 40px;
+    color: #fff;
+    background: #222;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    border-radius: 5px;
+    transition-delay: 0s;
+    font-family: 'cwTeXFangSong', serif;
+}
+.pgc {
+    display: table;
+    width: 100%;
+}
+
+.right {
+    text-align: right;
+    display: table-cell
+}
+.left {
+    text-align: left;
+    display: table-cell
+}

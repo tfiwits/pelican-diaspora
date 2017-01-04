@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="single">
+    <p id='page_url' style="display: none;">{{ SITEURL }}/{{ page.url }}</p>
+  <p id='disqus_username' style="display: none;">{{ DISQUS_SITENAME }}</p>
+  <div id="top">
+    <div class="bar"></div>
+    <a id="go-back" class="go-back" href="javascript:history.back()"><i class="mdi mdi-arrow-left"></i></a>
+    <h3 class="subtitle">{{ page.title }}</h3>
+    <div class="scrollbar"></div>
+  </div>
+
+  <div class="section">
+    <div class="article">
+      <div>
+        <h1 class="title">{{ page.title }}</h1>
+        <div class="content">
+          {{ page.content }}
+        </div>
+        <div class="comment link" >Comments</div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}

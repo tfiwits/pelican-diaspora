@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+  <div id="screen">
+    <div id="mark">
+      <div class="layer" data-depth="0.4">
+        <img id="cover" crossorigin="anonymous" src="
+        {% for article in articles_page.object_list %}
+			{%if loop.first %}
+					{{ SITEURL }}/theme/post_img/{{ article.slug }}.jpg
+			{% endif %}
+        {% endfor %}
+        "/>
+      </div>
+      </div>
+
+
+    <div id="vibrant">
+      <svg viewBox="0 0 2880 1620" height="100%" preserveAspectRatio="xMaxYMax slice">
+        <polygon opacity="0.7" points="2000,1620 0,1620 0,0 600,0 "/>
+      </svg>
+      <div></div>
+      </div>
+
+    <div id="header">
+      <div>
+          <a class="text-logo" href="/">{{SITENAME}}</a>
+        <div class="icon-menu switchmenu"></div>
+      </div>
+    </div>
+
+    {% for article in articles_page.object_list %}
+        {% if loop.first %}
+    <div id="post0">
+      <p>{{ article.date|strftime('%d %B %Y') }}</p>
+      <h2><a class="posttitle" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+      <p>{{ article.content|striptags|truncate(100) }}...</p>
+    </div>
+        {% endif %}
+    {% endfor %}
+    </div>
+  <div id="primary" style="display: none;">
+  {% include "loop.html" %}
+  </div>
+  {% include "pagination.html" %}
+  {% endblock %}
+  {% block preview %}
+      <div id="preview" class="trans"></div>
+  {% endblock %}
+

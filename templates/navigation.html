@@ -1,0 +1,6 @@
+      <ul id="menu-menu" class="menu">
+        {% for title, link in MENUITEMS %}
+        <li id="menu-item-{{ title }}" class="pview menu-item"><a href="{{ SITEURL }}/{{ link }}">{{ title }}</a></li>
+        {% endfor %}
+      </ul>
+

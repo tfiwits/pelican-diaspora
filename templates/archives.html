@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="single">
+  <div id="top">
+      <div class="bar"></div>
+    <a id="go-back" class="go-back" href="javascript:go_back()"><i class="mdi mdi-arrow-left"></i></a>
+      <h3 class="subtitle">Archives</h3>
+      <div class="scrollbar"></div>
+  </div>
+
+  <div class="section">
+    <div class="article">
+      <div>
+        <h1 class="title">Archives</h1>
+        <div class="content">
+            {% for article in dates %}
+              <dt>{{ article.locale_date }}</dt>
+              <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
