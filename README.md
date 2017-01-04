@@ -18,4 +18,4 @@ DISQUS_SITENAME = 'DISQUS SITENAME'
 
 # Other
 
-本主題引用了[cwTeXFangSong](https://fonts.google.com/earlyaccess#cwTeXFangSong)其授權為[SIL Open Font License, 1.1](http://fonts.gstatic.com/ea/cwtexfangsong/v3/OFL.txt)
+本主題引用了[cwTeXFangSong (Chinese Traditional)](https://fonts.google.com/earlyaccess#cwTeXFangSong)與[Material Design Icons](https://www.google.com.tw/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwj-w8Lo9ajRAhWDNJQKHTTmAN8QFggaMAA&url=https%3A%2F%2Fmaterialdesignicons.com%2F&usg=AFQjCNEnC2Dd0kL3xdSSKzv_RNgoxM5gDQ)
