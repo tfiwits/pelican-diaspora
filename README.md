@@ -5,7 +5,7 @@ A Pelican theme based on [ghost-diaspora](https://github.com/PeterCxy/ghost-dias
 # Installation
 Clone the repo：
 ```
-git clone git://github.com/tfiwits/pelican-diaspora.git``
+git clone https://github.com/tfiwits/pelican-diaspora.git
 ```
  Edit pelicanconf.py：
 ```
